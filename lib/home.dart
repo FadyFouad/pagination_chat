@@ -23,7 +23,7 @@ class HomeState extends State<Home> {
 
   ScrollController? controller;
   final _all = <WordPair>[];
-  final _saved =  Set<WordPair>();
+  final _saved =  <WordPair>{};
   final _biggerFont = const TextStyle(fontSize: 18.0);
   GlobalKey<ScaffoldState> scaffoldKey =  GlobalKey<ScaffoldState>();
   bool isLoading = false;

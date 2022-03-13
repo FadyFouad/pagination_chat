@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_load_more/home.dart';
+import 'package:pagination_chat/home.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: new ThemeData(
+      theme:  ThemeData(
         primaryColor: const Color(0xFF02BB9F),
         primaryColorDark: const Color(0xFF167F67),
-        accentColor: const Color(0xFF167F67),
       ),
-      home: new Home(),
+      home:  const Home(),
     );
   }
 }
